@@ -117,7 +117,7 @@ The application normally opens at <http://localhost:8501>.
 ├── .streamlit/
 │   └── config.toml                # Theme and widget styling
 ├── .gitignore                     # Excludes local/private files
-└── Code Comment .code-workspace   # Optional VS Code workspace file
+└── Code Comment .code-workspace   # Local VS Code workspace file; ignored by Git
 ```
 
 ## How it works
@@ -140,9 +140,13 @@ config.py
 .venv/
 __pycache__/
 .DS_Store
+Code Comment .code-workspace
 ```
 
 They are already listed in `.gitignore`.
+
+The local `Code Comment .code-workspace` file only helps open the project in
+VS Code and is not required to run the application.
 
 The following files are safe and useful to upload:
 
@@ -156,4 +160,3 @@ README.md
 requirements.txt
 .gitignore
 ```
-
